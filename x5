@@ -1,0 +1,107 @@
+%Ex-05
+%Ex name- Addition,Subtraction,Multiplication and Division of the signal.
+%Unit impulse signal
+
+clc;
+clear all;
+close all;
+
+n1=-3:2;
+x1=[-1,2,3,4,7,3];
+n2=-2:3; 
+x2=[3,2,-1,0,4,5];
+n = min(n1(1),n2(1)):max(n1(end),n2(end));
+y1=zeros (1, length (n))
+y1 (find(n>=n1 (1)&(n<=n1(end))))=x1; 
+y2=zeros(1,length(n))
+y2(find(n>=n2(1)&(n<=n2 (end))))=x2;
+y_add =y1+y2; 
+y_sub=y1-y2;
+y_mul=y1.*y2;
+y_div=y1./y2; 
+figure (1)
+subplot (3,1,1)
+stem (n,y1) 
+grid on
+title('y1')
+axis ([-4 4 -6 8])
+subplot (3,1,2)
+stem (n, y2) 
+grid on
+ 
+title('y2')
+ 
+axis ([-4 4 -6 8])
+ 
+subplot (3,1,3) 
+stem (n, y_add)
+ 
+grid on
+ 
+title('y1+y2') 
+axis ([-4 4 -6 8])
+
+figure(2)
+subplot (3,1,1) 
+stem (n, y1)
+figure (2)
+
+subplot (3,1,1) 
+stem (n,y1)
+
+grid on 
+title('y1')
+
+axis([-4 4 -6 8]) 
+subplot (3,1,2)
+
+stem (n, y2)
+
+grid on
+
+title('y2')
+
+axis ([-4 4 -6 8]) 
+subplot (3,1,3)
+stem (n,y_sub) 
+grid on
+title('y1-y2')
+axis ([-4 4 -6 8])
+
+figure (3)
+
+subplot (3,1,1)
+stem (n,y1)
+grid on
+title('y1')
+axis ([-4 4 -6 8])
+subplot (3,1,2)
+stem (n, y2)
+grid on 
+title('y2')
+axis ([-4 4 -6 8])
+subplot (3,1,3)
+stem (n,y_mul)
+grid on
+title('y1*y2') 
+axis ([-4 4 -6 12])
+
+figure (4)
+subplot (3, 1, 1)
+stem (n,y1)
+grid on
+title('y1')
+axis ([-4 4 -6 8]) 
+subplot (3,1,2)
+stem (n, y2)
+grid on
+title('y2') 
+axis([-4 4 -6 8])
+subplot (3,1,3)
+stem (n,y_div)
+grid on
+title('yl/y2')
+axis ([-4 4 -6 8])
+
+
+%typing master
