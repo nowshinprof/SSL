@@ -1,0 +1,47 @@
+close all clear allrcle:
+
+n1-3:2;
+
+x1-1-1,2,3,4.7.31
+
+n2=-2:3: x2-13,2,-1,0,4,5);
+
+nmin (n1 (1),n2 (1)) :max (ni (end), n2 (end));
+
+yi-zeros(1, length (n))
+
+yi (find (n) (1) (neni (end))))*x;
+
+y2-zeros (1, length (n))
+
+y2 (find (n>n2 (1) & (ncn2 (end))))=x2;
+
+y_addy1+y2; y_sub-yl-y2;
+
+y_mul-yl."y2:
+
+y_divwyl./y2; figure (1)
+
+subplot(3,1,1)
+
+atem (n,yll
+
+grid on
+
+title('y!)
+
+axis (-4 4-6 81)
+
+subplot (3,1,2)
+
+stem (n,y2) grid on
+
+title('y2')
+
+axis (1-44-6 #3)
+
+subplot (3,1.3) stem (n.y_add)
+
+grid on
+
+title('yl+y2') axis(1-4 4-6 81)
